@@ -297,8 +297,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96f28a92c62a5bf40bc1a3fddb847deb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   healthBar: {fileID: 561727254}
 --- !u!4 &273335962
 Transform:
@@ -400,11 +400,11 @@ Camera:
 <<<<<<< HEAD
   orthographic size: 5.786979
 =======
-  orthographic size: 32.94411
->>>>>>> f3f23cca1e12d3d7aa856336c13e6f278dd9cf19
-=======
   orthographic size: 5.764828
 >>>>>>> parent of f3f23cc... big ass frog
+=======
+  orthographic size: 32.94411
+>>>>>>> a60f5ea28271497c46a3a3418ac74952379bd75b
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -478,8 +478,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92bf0c8ef53926e4a9dc771fc3093f0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1 &618221657
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,8 +615,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4402a54de0563854982bcc20644d042d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   enemyHealth: 100
 --- !u!61 &979463254
 BoxCollider2D:
@@ -704,13 +704,11 @@ Transform:
 <<<<<<< HEAD
   m_LocalPosition: {x: 3.43, y: -3.378, z: 0}
   m_LocalScale: {x: 1.775, y: 1.911675, z: 1.775}
-=======
   m_LocalPosition: {x: 10.2, y: 11.4, z: 0}
 =======
   m_LocalPosition: {x: 3.43, y: -3.31, z: 0}
 >>>>>>> parent of f3f23cc... big ass frog
   m_LocalScale: {x: 1.775, y: 1.775, z: 1.775}
->>>>>>> f3f23cca1e12d3d7aa856336c13e6f278dd9cf19
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -784,7 +782,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 64, y: 53}
+    oldSize: {x: 0.25, y: 0.20703125}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -824,8 +822,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c26ebbbca49f6d4284aa5a5f3fe60c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   speed: 15
   jumpForce: 8
   fastFallForce: 12
@@ -892,7 +890,7 @@ Transform:
   m_GameObject: {fileID: 1371935164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.2196, y: -3.86, z: 0}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalScale: {x: 6.538, y: 6.538, z: 6.538}
   m_Children:
   - {fileID: 344513582}
   - {fileID: 1213527442}
@@ -909,8 +907,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c32e4511f0cd23641ad9e5904d231f26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   startTimeBtwAttack: 0.3
   attackPos: {fileID: 1213527442}
   whatIsEnemies:
@@ -933,7 +931,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
