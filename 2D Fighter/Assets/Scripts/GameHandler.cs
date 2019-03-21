@@ -8,7 +8,7 @@ public class GameHandler : MonoBehaviour
 
     private void Start()
     {
-        float health = 1f;
+        healthBar.SetSize(1f);
     }
 
     void Update()
