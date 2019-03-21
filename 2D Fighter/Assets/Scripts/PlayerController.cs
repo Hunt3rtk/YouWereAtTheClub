@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+
+
     public float speed;
     public float jumpForce;
     private float moveInput;
@@ -13,7 +15,7 @@ public class PlayerController : MonoBehaviour {
 
     private bool facingRight = true;
 
-    private bool isGrounded;
+    public bool isGrounded;
     public Transform groundCheck;
     public float checkRadius;
     public LayerMask whatIsGround;
@@ -21,10 +23,14 @@ public class PlayerController : MonoBehaviour {
     private int extraJumps;
     public int extraJumpsValue;
 
+    private Animator shieldAnim;
+    public GameObject shieldObject;
+
     void Start()
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
+        shieldAnim = shieldObject.GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -49,6 +55,11 @@ public class PlayerController : MonoBehaviour {
         if(isGrounded == true)
         {
             extraJumps = extraJumpsValue;
+
+            if(Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                ShieldActivate();
+            }
         }
         else
         {
@@ -75,5 +86,11 @@ public class PlayerController : MonoBehaviour {
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
+    }
+
+    public void ShieldActivate()
+    {
+        Debug.Log("shielding");
+        shieldAnim.Play("shield");
     }
 }

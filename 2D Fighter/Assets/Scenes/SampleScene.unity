@@ -852,12 +852,14 @@ MonoBehaviour:
   speed: 15
   jumpForce: 8
   fastFallForce: 12
+  isGrounded: 0
   groundCheck: {fileID: 344513582}
   checkRadius: 0.5
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
   extraJumpsValue: 1
+  shieldObject: {fileID: 256185668}
 --- !u!212 &1371935168
 SpriteRenderer:
   m_ObjectHideFlags: 0
