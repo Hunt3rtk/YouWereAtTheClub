@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour {
     public float speed;
     public float jumpForce;
     private float moveInput;
+    public float fastFallForce;
 
     private Rigidbody2D rb;
 
@@ -48,6 +49,13 @@ public class PlayerController : MonoBehaviour {
         if(isGrounded == true)
         {
             extraJumps = extraJumpsValue;
+        }
+        else
+        {
+            if(Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                rb.velocity = Vector2.down * fastFallForce;
+            }
         }
 
         if(Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0)
