@@ -1,17 +1,14 @@
 fileFormatVersion: 2
-guid: 9816aba3167619143afdcaadda7711f9
+guid: 2f7f30ba04b506f4aac74431c25b7a27
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Frog Ninja_0
-    21300002: Frog Ninja_1
-    21300004: Frog Ninja_2
-    21300006: Frog Ninja_3
-    21300008: Frog Ninja_4
-    21300010: Frog Ninja_5
-    21300012: Frog Ninja_6
-    21300014: Frog Ninja_7
-    21300016: Frog Ninja_8
-    21300018: Frog Ninja_9
+    21300000: Brick Tile_0
+    21300002: Brick Tile_1
+    21300004: Brick Tile_2
+    21300006: Brick Tile_3
+    21300008: Brick Tile_4
+    21300010: Brick Pillar_0
+    21300012: Brick Pillar_1
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -56,11 +53,11 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 64
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteBorder: {x: 0, y: 129, z: 128, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -73,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -84,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -94,209 +91,176 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Frog Ninja_0
+      name: Brick Tile_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 199
+        y: 128
         width: 64
-        height: 53
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6661a092b35a7143a3e644bf2f38253
+      spriteID: e58f9b215e7fd4c4bb73a644c5514ed4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frog Ninja_1
+      name: Brick Tile_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 199
+        y: 128
         width: 64
-        height: 53
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ae660f00a59d4640a1ebfbb04666992
+      spriteID: a83d4ddac847907468219f7450a45590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frog Ninja_2
+      name: Brick Tile_2
       rect:
         serializedVersion: 2
         x: 128
-        y: 199
+        y: 128
         width: 64
-        height: 53
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e4bc742d485f6b44ad971ac7f8c1e98
+      spriteID: 11f0010c7dbd7b140af05f2dabc260e0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frog Ninja_3
+      name: Brick Tile_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 135
+        y: 64
         width: 64
-        height: 53
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76c3e72603bef2849b217652b4e66cfb
+      spriteID: e3e775367c4362e42b0991f3ef11e81e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frog Ninja_4
+      name: Brick Tile_4
       rect:
         serializedVersion: 2
         x: 64
-        y: 135
-        width: 63
-        height: 52
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18f403b3a7d0b5643ac589bc69ed3515
+      spriteID: 99a6b6323b4c4cc43a102e040dbd2160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frog Ninja_5
+      name: Brick Pillar_0
       rect:
         serializedVersion: 2
-        x: 128
-        y: 135
-        width: 63
-        height: 50
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 139
+        y: 88
+        width: 39
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f326018c24e58a459bc0ae700372dae
+      spriteID: 5e62eea8ce887a74385ae4148e14c366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frog Ninja_6
+      name: Brick Pillar_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 71
-        width: 63
-        height: 50
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 21
+        y: 1
+        width: 22
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9da4eff409283541ba93289a74aae58
+      spriteID: c8bc8d971b9da034cb4d1c0ce2ec5577
       vertices: []
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Frog Ninja_7
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 71
-        width: 63
-        height: 50
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e2f4020ac06a324880f359218f19d58
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frog Ninja_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 71
-        width: 63
-        height: 52
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce9b17c1858f3c844a67ee013ec1d9be
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frog Ninja_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 7
-        width: 63
-        height: 52
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0989228a8f8059c47af2f15bb9e0f5b2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    outline: []
+    outline:
+    - - {x: -77, y: -30}
+      - {x: -77, y: -96}
+      - {x: -52, y: -96}
+      - {x: -51, y: -95}
+      - {x: -51, y: -32}
+      - {x: -53, y: -30}
+    - - {x: -96, y: 96}
+      - {x: -95, y: 32}
+      - {x: -32, y: 32}
+      - {x: -32, y: 96}
+      - {x: -96, y: 96}
+      - {x: -96, y: 96}
+    - - {x: 42, y: 10}
+      - {x: 42, y: -2}
+      - {x: 48, y: -10}
+      - {x: 77, y: -10}
+      - {x: 84, y: -3}
+      - {x: 84, y: 8}
+      - {x: 83, y: 10}
+    - - {x: -77, y: -33}
+      - {x: -77, y: -32}
+      - {x: -77, y: -32}
+      - {x: -77, y: -33}
+    - - {x: -32, y: 32}
+      - {x: -32, y: 96}
+      - {x: 32, y: 96}
+      - {x: 32, y: 32}
     physicsShape: []
     bones: []
-    spriteID: 046ba854c9019b144981a553ad6c9748
+    spriteID: d45ad48f379535a429d05e297e1b10a2
     vertices: []
     indices: 
     edges: []
