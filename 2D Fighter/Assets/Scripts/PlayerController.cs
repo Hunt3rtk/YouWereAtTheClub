@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
 
     public float speed;
     public float jumpForce;
-    private float moveInput;
+    public float moveInput;
     public float fastFallForce;
 
     private Rigidbody2D rb;
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour {
     public int extraJumpsValue;
 
     public Animator shieldAnimation;
-    public Animator runningAnimation;
+    public Animator playerAnimation;
 
     void Start()
     {
@@ -39,33 +39,33 @@ public class PlayerController : MonoBehaviour {
         moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
-        if(facingRight == false && moveInput > 0)
+        if (facingRight == false && moveInput > 0)
         {
             Flip();
         }
-        else if(facingRight == true && moveInput < 0)
+        else if (facingRight == true && moveInput < 0)
         {
             Flip();
         }
-
-        if(moveInput > 0)
-        {
-            runningAnimation.SetFloat("runningAnimation", speed);
-        }
-        else
-        {
-            runningAnimation.SetFloat("runningAnimation", 0);
-        }
-
     }
 
     void Update()
     {
+        if(moveInput != 0 && isGrounded == true)
+        {
+            playerAnimation.SetBool("isRunning", true);
+            Debug.Log("Running!");
+        }
+        else
+        {
+            playerAnimation.SetBool("isRunning", false);
+        }
+
+
         //Sheild Stuff
         if (Input.GetKey(KeyCode.DownArrow) && isGrounded == true)
         {
             shieldAnimation.SetBool("isShielding", true);
-            Debug.Log("Shielding!");
         }
         else
         {
