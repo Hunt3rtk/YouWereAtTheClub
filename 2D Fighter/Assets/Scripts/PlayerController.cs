@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour {
     public int extraJumpsValue;
 
     public Animator shieldAnimation;
+    public Animator runningAnimation;
 
     void Start()
     {
@@ -46,6 +47,16 @@ public class PlayerController : MonoBehaviour {
         {
             Flip();
         }
+
+        if(moveInput > 0)
+        {
+            runningAnimation.SetFloat("runningAnimation", speed);
+        }
+        else
+        {
+            runningAnimation.SetFloat("runningAnimation", 0);
+        }
+
     }
 
     void Update()
