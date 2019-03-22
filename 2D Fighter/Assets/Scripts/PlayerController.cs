@@ -50,19 +50,20 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        if(isGrounded == true)
+        //Sheild Stuff
+        if (Input.GetKey(KeyCode.DownArrow) && isGrounded == true)
+        {
+            shieldAnimation.SetBool("isShielding", true);
+            Debug.Log("Shielding!");
+        }
+        else
+        {
+            shieldAnimation.SetBool("isShielding", false);
+        }
+
+        if (isGrounded == true)
         {
             extraJumps = extraJumpsValue;
-
-            if(Input.GetKey(KeyCode.DownArrow))
-            {
-                shieldAnimation.SetBool("isShielding", true);
-                Debug.Log("Shielding!");
-            }
-            else
-            {
-                shieldAnimation.SetBool("isShielding", false);
-            }
         }
         else
         {
