@@ -10,7 +10,6 @@ public class HealthBar : MonoBehaviour
    private void Start()
     {
          Bar = transform.Find("Bar");
-        Bar.localScale = new Vector3(.5f, 1f);
     }
 
     public void SetSize(float sizeNormalized)
