@@ -23,12 +23,14 @@ public class PlayerController : MonoBehaviour {
     private int extraJumps;
     public int extraJumpsValue;
 
-    public Animator shieldAnimation;
+    private Animator shieldAnim;
+    public GameObject shieldObject;
 
     void Start()
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
+        shieldAnim = shieldObject.GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -54,14 +56,9 @@ public class PlayerController : MonoBehaviour {
         {
             extraJumps = extraJumpsValue;
 
-            if(Input.GetKey(KeyCode.DownArrow))
+            if(Input.GetKeyDown(KeyCode.DownArrow))
             {
-                shieldAnimation.SetBool("isShielding", true);
-                Debug.Log("Shielding!");
-            }
-            else
-            {
-                shieldAnimation.SetBool("isShielding", false);
+                ShieldActivate();
             }
         }
         else
@@ -91,4 +88,9 @@ public class PlayerController : MonoBehaviour {
         transform.localScale = Scaler;
     }
 
+    public void ShieldActivate()
+    {
+        Debug.Log("shielding");
+        shieldAnim.Play("shield");
+    }
 }
